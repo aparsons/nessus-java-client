@@ -1,12 +1,18 @@
 package net.continuumsecurity.model.jaxrs;
 
 /**
- * Created by stephen on 22/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Scan {
-    String uuid;
-    String readableName;
-    String status;
+    
+    private String uuid;
+    private String readableName;
+    private String status;
 
     public String getReadableName() {
         return readableName;
@@ -31,4 +37,5 @@ public class Scan {
     public void setUuid(String uuid) {
         this.uuid = uuid;
     }
+    
 }

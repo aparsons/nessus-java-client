@@ -5,16 +5,22 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
 
 /**
- * Created by stephen on 22/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Contents {
-    String token;
-    Scans scans;
-    List<Policy> policies;
-    Scan scan;
-    List<Host> host;
-    List<Port> port;
-    List<ReportItem> reportItem;
+    
+    private String token;
+    private Scans scans;
+    private List<Policy> policies;
+    private Scan scan;
+    private List<Host> host;
+    private List<Port> port;
+    private List<ReportItem> reportItem;
 
     @XmlElementWrapper(name = "portDetails")
     @XmlElement(name = "ReportItem")
@@ -70,7 +76,6 @@ public class Contents {
         this.host = host;
     }
 
-
     @XmlElementWrapper(name = "portList")
     @XmlElement(name = "port")
     public List<Port> getPort() {
@@ -80,4 +85,5 @@ public class Contents {
     public void setPort(List<Port> port) {
         this.port = port;
     }
+    
 }

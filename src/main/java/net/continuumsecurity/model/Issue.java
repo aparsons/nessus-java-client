@@ -3,19 +3,26 @@ package net.continuumsecurity.model;
 import java.util.List;
 
 /**
- * Created by stephen on 23/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Issue {
-    int pluginID;
-    int port;
-    int severity;
-    String protocol;
-    List<String> hosts;
+    
+    private int pluginID;
+    private int port;
+    private int severity;
+    private String protocol;
+    private List<String> hosts;
     private String description;
     private String solution;
     private String output;
     private String synopsis;
-
+    private String pluginName;
+    
     public String getPluginName() {
         return pluginName;
     }
@@ -23,8 +30,6 @@ public class Issue {
     public void setPluginName(String pluginName) {
         this.pluginName = pluginName;
     }
-
-    private String pluginName;
 
     public int getPluginID() {
         return pluginID;

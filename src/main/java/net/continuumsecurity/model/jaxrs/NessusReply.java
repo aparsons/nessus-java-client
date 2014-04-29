@@ -4,10 +4,16 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * Created by stephen on 22/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
-@XmlRootElement( name="reply" )
+@XmlRootElement(name = "reply")
 public class NessusReply {
+    
     private String seq;
     private String status;
     private Contents contents;

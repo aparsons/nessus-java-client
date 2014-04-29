@@ -5,9 +5,15 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
 
 /**
- * Created by stephen on 22/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Scans {
+    
     private List<Scan> scan;
 
     @XmlElementWrapper(name="scanList")
@@ -19,4 +25,5 @@ public class Scans {
     public void setScan(List<Scan> scan) {
         this.scan = scan;
     }
+    
 }

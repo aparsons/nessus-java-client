@@ -1,11 +1,17 @@
 package net.continuumsecurity.model.jaxrs;
 
 /**
- * Created by stephen on 22/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Policy {
-    int policyID;
-    String policyName;
+    
+    private int policyID;
+    private String policyName;
 
     public int getPolicyID() {
         return policyID;
@@ -22,4 +28,5 @@ public class Policy {
     public void setPolicyName(String policyName) {
         this.policyName = policyName;
     }
+    
 }

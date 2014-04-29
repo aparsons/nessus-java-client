@@ -1,14 +1,20 @@
 package net.continuumsecurity.model.jaxrs;
 
 /**
- * Created by stephen on 23/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Data {
-    String solution;
-    String risk_factor;
-    String description;
-    String synopsis;
-    String plugin_output;
+    
+    private String solution;
+    private String risk_factor;
+    private String description;
+    private String synopsis;
+    private String plugin_output;
 
     public String getSolution() {
         return solution;
@@ -49,4 +55,5 @@ public class Data {
     public void setPlugin_output(String plugin_output) {
         this.plugin_output = plugin_output;
     }
+    
 }

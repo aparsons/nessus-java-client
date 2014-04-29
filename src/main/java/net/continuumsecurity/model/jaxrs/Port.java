@@ -5,14 +5,19 @@ import javax.xml.bind.annotation.XmlElementWrapper;
 import java.util.List;
 
 /**
- * Created by stephen on 23/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
 public class Port {
-    int portNum;
-    String protocol;
-    String svcname;
-    List<Item> item;
-
+    
+    private int portNum;
+    private String protocol;
+    private String svcname;
+    private List<Item> item;
 
     @XmlElementWrapper(name = "severityCount")
     @XmlElement(name = "item")

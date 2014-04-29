@@ -1,26 +1,31 @@
 package net.continuumsecurity;
 
+import java.util.List;
+import java.util.Map;
+import javax.security.auth.login.LoginException;
+
 import net.continuumsecurity.model.Issue;
 import net.continuumsecurity.model.jaxrs.Host;
 import net.continuumsecurity.model.jaxrs.Port;
 import net.continuumsecurity.model.jaxrs.ReportItem;
-import org.junit.Before;
-import org.junit.Test;
-
-import javax.security.auth.login.LoginException;
-import java.util.List;
-import java.util.Map;
-
-import static junit.framework.Assert.assertEquals;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.core.IsEqual.equalTo;
 import static org.junit.Assert.assertThat;
+import org.junit.Before;
+import org.junit.Ignore;
+import org.junit.Test;
 
 /**
- * Created by stephen on 23/02/2014.
+ * 
+ * 
+ * @author Stephen de Vries
+ * @author Adam Parsons
+ * @version 0.0.2, 04/29/14
+ * @since 1.0.0
  */
+@Ignore("Requires local nessus instance")
 public class ReportClientTest {
-    ReportClient client;
+    NessusReportClient client;
     String nessusUrl = "https://localhost:8834";
     String user = "continuum";
     String password = "continuum";
@@ -33,7 +38,7 @@ public class ReportClientTest {
 
     @Before
     public void setup() {
-        client = new ReportClient(nessusUrl);
+        client = new NessusReportClient(nessusUrl);
     }
     @Test
     public void testGetHostsFromReport() throws LoginException {
